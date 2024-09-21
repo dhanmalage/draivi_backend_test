@@ -1,0 +1,78 @@
+html, body {
+    padding: 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+h1 {
+    text-align: center;
+}
+
+.add-btn {
+    border: none;
+    color: #04AA6D;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #04AA6D;
+}
+.add-btn:hover {
+    color: white;
+    background-color: #04AA6D;
+}
+.clear-btn {
+    background-color: #f44336;
+    border: none;
+    color: #f44336;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #f44336;
+}
+.clear-btn:hover {
+    color: white;
+    background-color: #f44336;
+}
+
+#updateForm {
+    margin-left: auto;
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
+    float: right;
+}
+#updateForm img {
+    max-width: 30px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 7px;
+}
+.btn-update {
+    padding: 12px 28px;
+    background-color: #008CBA;
+    border: none;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+}
