@@ -23,10 +23,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             break;
         default:
             break;
-    }    
-} else {
+    }
+}
+
+if($_SERVER['REQUEST_METHOD'] === 'GET') {
     $controller = new DataController();
-    $controller->index();
+    if(isset($_GET['options'])) {
+        $controller->optionsPage();
+    }  else if(isset($_GET['empty'])) {
+        $controller->deleteProducts();
+        header( "refresh:1; url=index.php" );
+    } else {
+        $controller->index();
+    }
 }
 ?>
 

@@ -46,4 +46,21 @@ class DataController {
     {
         return $this->model->getSingleProduct($number);
     }
+
+    /**
+     * Display options page
+     */
+    public function optionsPage()
+    {
+        include '../app/views/options_view.php';
+    }
+
+    /**
+     * Delete records
+     * Truncate table
+     */
+    public function deleteProducts()
+    {
+        return $this->model->deleteAllProducts();
+    }
 }

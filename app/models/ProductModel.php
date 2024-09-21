@@ -144,4 +144,14 @@ class ProductModel {
 
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
+
+    /**
+     * Delete all products
+     */
+    function deleteAllProducts()
+    {
+        $query = "DELETE FROM products";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+    }
 }

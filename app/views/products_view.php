@@ -11,10 +11,13 @@
 <body>
     <div class="main">
         <h1>Products Table</h1>
-        <form method="POST" action="index.php" id="updateForm">
-            <input type="hidden" name="action" value="data-update">
-            <button type="submit" class="btn-update">Update / Sync Data</button>
-        </form>
+        <div class="buttons-wrap">
+            <form method="POST" action="index.php" id="updateForm">
+                <input type="hidden" name="action" value="data-update">
+                <button type="submit" class="btn-update">Update / Sync Data</button>
+            </form>
+            <a href="index.php?options=1" class="btn-info">Options</a>
+        </div>
 
         <table>
             <thead>
